@@ -1,0 +1,61 @@
+{
+  "name": "remote-http-middleware",
+  "version": "0.1.0",
+  "author": {
+    "name": "Rafael Floriano <rfloriano@gmail.com>"
+  },
+  "description": "Webpack dev server middleware for requiring http an address and inject bundle.js",
+  "files": [
+    "index.js"
+  ],
+  "scripts": {
+    "test": "node scripts/test.js --env=jsdom"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rfloriano/remote-http-middleware.git"
+  },
+  "bugs": {
+    "url": "https://github.com/rfloriano/remote-http-middleware/issues"
+  },
+  "homepage": "https://github.com/rfloriano/remote-http-middleware",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "webpack": "",
+    "raw-body": ""
+  },
+  "devDependencies": {
+    "jest": "^21.2.1",
+    "html-webpack-plugin": "^2.29.0"
+  },
+  "jest": {
+    "collectCoverageFrom": [
+      "src/**/*.{js,jsx,mjs}"
+    ],
+    "testMatch": [
+      "<rootDir>/src/**/__tests__/**/*.{js,jsx,mjs}",
+      "<rootDir>/src/**/?(*.)(spec|test).{js,jsx,mjs}"
+    ],
+    "testEnvironment": "node",
+    "testURL": "http://localhost",
+    "transform": {
+      "^.+\\.(js|jsx|mjs)$": "<rootDir>/node_modules/babel-jest"
+    },
+    "transformIgnorePatterns": [
+      "[/\\\\]node_modules[/\\\\].+\\.(js|jsx|mjs)$"
+    ],
+    "moduleNameMapper": {
+      "^react-native$": "react-native-web"
+    },
+    "moduleFileExtensions": [
+      "web.js",
+      "mjs",
+      "js",
+      "json",
+      "web.jsx",
+      "jsx",
+      "node"
+    ]
+  }
+}
