@@ -5,9 +5,6 @@
     "name": "Rafael Floriano <rfloriano@gmail.com>"
   },
   "description": "Webpack dev server middleware for requiring http an address and inject bundle.js",
-  "files": [
-    "index.js"
-  ],
   "scripts": {
     "test": "node scripts/test.js --env=jsdom"
   },

@@ -15,6 +15,7 @@ $ curl 'http://localhost:3001/hello-world'
 
 After install this project on your `webpack-dev-server` running locally on port `3000`:
 
+
 Ex:
 
 ``` bash
@@ -33,7 +34,7 @@ Install with `npm`:
 
 
 ``` bash
-$ npm install remote-http-middleware
+$ npm install remote-http-middleware --save-dev
 ```
 
 So, on your `webpackDevServer.config.js` you need to install on your `app` using `app.use()` like:
